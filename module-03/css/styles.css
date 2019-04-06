@@ -8,28 +8,104 @@ html{
     box-sizing: border-box;  
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header, .main{
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.navigation{
+    padding: 77px 313px 103px;
+}
+
 .menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.menu:not(:last-child){
-    margin-right: 115px;
+.menu li:not(:last-child){
+    margin-right: 87px;
 }
 
-li{
-    display: inline-block;
-    margin-right: 115px;    
+.menu li{
+    display: inline-block;    
 }
 
-a{
+.menu a{
     text-decoration: none;
     font-family: 'Playfair Display', serif;
-    font-size: 140px;
+    font-size: 14px;
     color: rgba(98, 98, 98, 255);
     text-align: center;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
-.container{
-    width: 1200px;
-    margin: 0 auto;
+.menu a:hover,
+.menu a:focus{
+    color: #03a9f4;
+}
+
+article{
+    width: 420px;
+    display: inline-block;
+}
+
+.article-one, .article-three, .article-five{
+    margin: 0 30px 150px 130px;
+}
+
+.article-two, .article-four, .article-six{
+    margin: 0 150px 130px 30px;
+}
+
+.subtitle{
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14pt;
+    color: rgba(180, 173, 158, 255);
+    text-align: left;
+    font-weight: 300px;
+    margin: 32px 0 28px;
+}
+
+.header{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: rgba(98, 98, 98, 255);
+    text-align: left;
+    font-weight: 400;
+}
+
+.text{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: rgba(98, 98, 98, 255);
+    text-align: left;
+    font-weight: 400;
+    margin-top: 40px;
+    line-height: 150%;
+}
+
+.load-more{
+    background-color: white;
+    padding: 22px 34px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: rgba(98, 98, 98, 255);
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 0 auto 70px;
+    border-style: solid;
+    border-color: rgba(98, 98, 98, 255);
+    border-width: 1px;
 }
