@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ubuntu:300');
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;  
+}
+
+.menu{
+}
+
+.menu:not(:last-child){
+    margin-right: 115px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 115px;    
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 140px;
+    color: rgba(98, 98, 98, 255);
+    text-align: center;
+    font-weight: 400;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
