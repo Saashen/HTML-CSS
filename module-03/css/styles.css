@@ -98,10 +98,11 @@ article:not(:nth-child(2n)){
     line-height: 200%;
     display: block;
 }
-/* 
+
+
 .text:nth-last-child(-n + 2){
     margin-bottom: 130px;
-} */
+}
 
 .load-more{
     background-color: white;
