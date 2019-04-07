@@ -73,7 +73,7 @@ article:not(:nth-child(2n)){
 .subtitle{
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 14pt;
+    font-size: 14px;
     color: rgba(180, 173, 158, 255);
     text-align: left;
     font-weight: 300px;
