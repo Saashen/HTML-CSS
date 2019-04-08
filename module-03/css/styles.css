@@ -58,17 +58,18 @@ img{
     font-size: 0;
 }
 
-article{
+.article{
     width: 420px;
     display: inline-block;
-}
-
-.margin:not(:nth-child(2n)){
-    margin-right: 60px;
-}
-
-.margin{
     margin-bottom: 130px;
+}
+
+.article:nth-last-child(-n + 2){
+    margin-bottom: 0;
+}
+
+.article:not(:nth-child(2n)){
+    margin-right: 60px;
 }
 
 .image{
