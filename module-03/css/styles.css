@@ -66,6 +66,10 @@ article:not(:nth-child(2n)){
     margin-right: 60px;
 }
 
+article:nth-last-child(-n + 2){
+    margin-bottom: 130px;
+}
+
 .image{
     margin-bottom: 32px;
 }
@@ -96,12 +100,6 @@ article:not(:nth-child(2n)){
     text-align: left;
     font-weight: 400;
     line-height: 200%;
-    display: block;
-}
-
-
-.text:nth-last-child(-n + 2){
-    margin-bottom: 130px;
 }
 
 .load-more{
