@@ -53,6 +53,11 @@ img{
     color: #03a9f4;
 }
 
+.mainheader{
+    padding-top: 76px;
+    padding-bottom: 102px;
+}
+
 .section{
     font-size: 0;
 }
@@ -62,11 +67,11 @@ article{
     display: inline-block;
 }
 
-article:not(:nth-child(2n)){
+.margin:not(:nth-child(2n)){
     margin-right: 60px;
 }
 
-article:nth-last-child(-n + 2){
+.margin:nth-last-child(-n + 2){
     margin-bottom: 130px;
 }
 
@@ -90,8 +95,7 @@ article:nth-last-child(-n + 2){
     color: rgba(98, 98, 98, 255);
     text-align: left;
     font-weight: 400;
-    padding-top: ;
-    padding-bottom: 34px;
+    margin-bottom: 34px;
 }
 
 .text{
