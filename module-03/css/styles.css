@@ -20,7 +20,7 @@ img{
 }
 
 .navigation{
-    margin: 77px auto 103px;
+    /* margin: 77px auto 103px; */
 }
 
 .menu{
@@ -90,7 +90,8 @@ article:nth-last-child(-n + 2){
     color: rgba(98, 98, 98, 255);
     text-align: left;
     font-weight: 400;
-    margin-bottom: 34px;
+    padding-top: ;
+    padding-bottom: 34px;
 }
 
 .text{
@@ -114,5 +115,9 @@ article:nth-last-child(-n + 2){
     border-style: solid;
     border-color: rgba(98, 98, 98, 255);
     border-width: 1px;
-    margin: 54px auto 70px;
+    margin: 0 auto;
+}
+
+section{
+    padding-bottom: 70px;
 }
