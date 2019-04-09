@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600i,700|Roboto:300,700');
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;  
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.main{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.products{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: “”;
+    display: table;
+    clear: both;
+ }
+
+ .product-card{
+    width: 255px;
+}
+
+.card-background{
+    background-color: #e9f0fd;
+    height: 282px;
+    font-size: 0;
+}
+
+.price{
+    font-size: 0;
+}
+
+.price-title{
+    width: 200px;
+    height: 40px;
+    background-color: #323232;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 255);
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 58px 14px 14px;
+}
+
+.price-cash{
+    width: 55px;
+    height: 40px;
+    background-color: #8c8c8c;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 12px 15px 12px 10px;
+    display: inline-block;
+}
