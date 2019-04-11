@@ -116,14 +116,11 @@ a{
     display: inline-block;
 }
 
-.card-background{
+.card{
     background-color: #e9f0fd;
     height: 282px;
     width: 255px;
-}
-
-.card{
-
+    background-position: center;
 }
 
 .price{
