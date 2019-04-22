@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600i,700|Roboto:300,700');
+@import url("https://use.typekit.net/qpo5kyx.css");
 
 html{
     box-sizing: border-box;
@@ -64,10 +65,10 @@ a{
     float: left;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: rgba(81, 81, 81, 255);
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 8px;
+    color: rgba(81, 81, 81, 255);
 }
 
 .menu-item:not(:last-child){
@@ -80,6 +81,74 @@ a{
 }
 
 .slider{
+    margin: auto;
+    font-size: 0;
+    position: relative;
+}
+
+.slider-ctrl{
+    display: inline-block;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 104px;
+    height: 104px;
+    background-color: #1abc9c;
+    opacity: 0.6;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.slider-ctrl-prev{
+    left: 10%;
+    background-image: url(../img/icons/prev.png);
+}
+
+.slider-ctrl-next{
+    right: 10%;
+    background-image: url(../img/icons/next.png);
+}
+
+.slider-ctrl:hover,
+.slider-ctrl:focus{
+    opacity: 1;
+}
+
+.slides{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slides-item{
+    position: relative;
+}
+
+.slides img{
+    height: 700px;
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(0.5);
+}
+
+.slides-descr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 53px;
+    color: #fff;
+    text-align: left;
+    font-weight: 700;
+    }
+
+.tours{
+    font-size: 25px;
+    font-weight: 300;
 }
 
 .main{
@@ -110,6 +179,7 @@ a{
 }
 
 .product-card{
+    position: relative;
     width: 255px;
     float: left;
     margin-bottom: 30px;
@@ -118,6 +188,23 @@ a{
 
 .product-card:not(:nth-child(4n)){
     margin-right: 30px;
+}
+
+.opacity{
+    position: absolute;
+    width: 235px;
+    height: 262px;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 255);
+    opacity: 0.5;
+}
+
+.opacity-card{
+}
+
+.product-card:hover .opacity{
+    opacity: 0.5;
 }
 
 .product-link{
@@ -162,87 +249,29 @@ a{
     display: inline-block;
 }
 
-.price:hover .price-title,
+.product-card:hover .price-title,
 .price-title:focus{
     background-color: #1abc9c;
 }
 
-.price:hover .price-cash,
+.product-card:hover .price-cash,
 .price-cash:focus{
     background-color: #7fd9c7;
 }
 
-.latest-news{
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    color: rgba(81, 81, 81, 255);
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-top: 70px;
+footer{
+    background-color: #323232;
 }
 
-.latest-news::after{
-    content: '';
-    display: block;
-    width: 164px;
-    height: 6px;
-    background-color: rgba(26, 188, 156, 255);
-    margin: 32px auto 80px;
-}
-
-.article{
-    float: left;
-    width: 350px;
-}
-
-.article:not(:last-child){
-    margin-right: 30px;
-}
-
-.article img{
-    margin-bottom: 14px;
-}
-
-.article-name{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    color: rgba(85, 82, 82, 255);
-    text-align: left;
-    font-weight: 600;
-    line-height: 150%;
-}
-
-.article-name::after{
-    content: '';
-    display: block;
-    background-color: rgba(26, 188, 156, 255);
-    width: 136px;
-    height: 3px;
-    margin: 10px 0 30px;
-}
-
-.article-text{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: rgba(85, 82, 82, 255);
-    text-align: left;
-    font-weight: 400;
-    margin-bottom: 15px;
-    line-height: 200%;
-}
-
-.read-more{
+.rights{
     font-family: 'OpenSans', sans-serif;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 255);
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(254, 254, 254, 255);
     text-align: center;
-    font-weight: 300;
-    width: 160px;
-    height: 50px;
-    background-color: #4ec6ab;
-    text-align: center;
-    border-style: none;
-    cursor: pointer;
-    margin-bottom: 45px;
+    padding: 38px 0;
+}
+
+.themengraph{
+    color: #1abc9c;
 }
