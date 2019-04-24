@@ -64,10 +64,13 @@ a{
     float: left;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: rgba(81, 81, 81, 255);
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 8px;
+}
+
+.menu-item a{
+    color: rgba(81, 81, 81, 255);
 }
 
 .menu-item:not(:last-child){
