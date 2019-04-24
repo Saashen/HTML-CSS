@@ -17,6 +17,7 @@ img{
 
 a{
     text-decoration: none;
+    display: inline-block;
 }
 
 .clearfix::after{
@@ -72,6 +73,10 @@ a{
 
 .menu-item a{
     color: rgba(81, 81, 81, 255);
+}
+
+.menu-item a:not(:last-child){
+    padding-right: 30px;
 }
 
 .menu-item:not(:last-child){
@@ -205,17 +210,107 @@ a{
     opacity: 0;
 }
 
-.opacity-card{
+.opacity-cards{
+    list-style: none;
+    width: 100%;
     position: absolute;
-    z-index: 2;
+    top: 80px;
+    left: 35px;
 }
+
+.opacity-cards li{
+    float: left;
+}
+
+.opacity-cards li:not(:last-child){
+    margin-right: 8px;
+}
+
+.opacity-cards a{
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.opacity-cards a:hover,
+.opacity-cards a:focus{
+    background-color: #1abc9c;
+}
+
+.heart{
+    background-image: url(../img/icons/heart.png);
+}
+
+.directions{
+    background-image: url(../img/icons/directions.png);
+}
+
+.time{
+    background-image: url(../img/icons/time.png);
+}
+
+.add-to-card{
+    margin-top: 8px;
+}
+
+.add-to-card a{
+    background-image: url(../img/icons/basket.png);
+    width: 166px;
+    height: 50px;
+}
+
+/* .opacity li{
+    display: block;
+}
+
+.opacity-card  a{
+    position: absolute;
+    top: 80px;
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.opacity-card-heart{
+    left: 35px;
+    background-image: url(../img/icons/heart.png);
+}
+
+.opacity-card-directions{
+    left: 95px;
+    background-image: url(../img/icons/directions.png);
+}
+
+.opacity-card-time{
+    right: 35px;
+    background-image: url(../img/icons/time.png);
+}
+
+
+.opacity-card-basket{
+    position: absolute;
+    width: 166px;
+    height: 50px;
+    border: 1px solid #fff;
+    bottom: 75px;
+    left: 35px;
+    background-image: url(../img/icons/basket.png);
+    background-repeat: no-repeat;
+    background-position: 12px 10px;
+}
+
+.opacity-card-basket p{
+    font-size: 14px;
+} */
 
 .product-card:hover .opacity{
     opacity: 0.5;
-}
-
-.product-link{
-    display: inline-block;
 }
 
 .card{
@@ -281,4 +376,19 @@ footer{
 
 .themengraph{
     color: #1abc9c;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
