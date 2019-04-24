@@ -106,12 +106,12 @@ a{
 }
 
 .slider-ctrl-prev{
-    left: 10%;
+    left: 100px;
     background-image: url(../img/icons/prev.png);
 }
 
 .slider-ctrl-next{
-    right: 10%;
+    right: 100px;
     background-image: url(../img/icons/next.png);
 }
 
@@ -139,19 +139,21 @@ a{
 
 .slides-descr{
     position: absolute;
+    width: 738px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Roboto', sans-serif;
-    font-size: 53px;
+    font-size: 58px;
     color: #fff;
     text-align: left;
     font-weight: 700;
     }
 
 .tours{
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 300;
+    text-transform: uppercase;
 }
 
 .main{
@@ -200,10 +202,12 @@ a{
     top: 10px;
     left: 10px;
     background-color: rgba(0, 0, 0, 255);
-    opacity: 0.5;
+    opacity: 0;
 }
 
 .opacity-card{
+    position: absolute;
+    z-index: 2;
 }
 
 .product-card:hover .opacity{
