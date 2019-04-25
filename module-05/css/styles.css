@@ -17,7 +17,7 @@ img{
 
 a{
     text-decoration: none;
-    display: inline-block;
+    display: block;
 }
 
 .clearfix::after{
@@ -153,6 +153,7 @@ a{
     color: #fff;
     text-align: left;
     font-weight: 700;
+    text-transform: uppercase;
     }
 
 .tours{
@@ -226,13 +227,11 @@ a{
     float: left;
 }
 
-.opacity-cards li:not(:last-child){
+.opacity-cards li:not(:nth-last-child(-n + 2)){
     margin-right: 8px;
 }
 
 .opacity-cards a{
-    display: block;
-    float: left;
     width: 50px;
     height: 50px;
     border: 1px solid #fff;
@@ -262,9 +261,34 @@ a{
 }
 
 .add-to-card a{
-    background-image: url(../img/icons/basket.png);
     width: 166px;
     height: 50px;
+}
+
+.add-to-card p{
+    position: relative;
+    width: 166px;
+    height: 50px;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-left: 43px;
+    padding-top: 18px;
+}
+
+.add-to-card p::before{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    display: block;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/icons/basket.png);
+    background-position: center;
 }
 
 .card{
