@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400');
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+:root{
+    --green: #95e1d3;
+    --red: #f38181;
+    --montserrat: 'Montserrat', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;  
+}
+
+h1{
+    font-family: var(--montserrat);
+    font-size: 30px;
+    color: var(--green);
+    text-align: left;
+    font-weight: 700;
+}
+
+.menu{
+    width: 490px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-li{
+    font-family: var(--montserrat);
+    font-size: 14px;
+    color: var(--green);
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.menu-li:hover,
+.menu-li:focus{
+    color: var(--red);
+}
+
+/* .menu-li::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 12px auto 0;
+    color: #f38181;
+} */
+
+.main{
+    padding-top: 110px;
+}
+
+.services{
+    display: block;
+    font-family: var(--montserrat);
+    font-size: 30px;
+    color: rgba(51, 51, 51, 255);
+    font-weight: 700;
+    text-align: center;
+}
+
+.services-span{
+    display: block;
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 22px;
+}
+
+.services::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--red);
+    margin: 42px auto 0;
+}
+
+.services-cards{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 76px 10px 0;
+
+}
+
+.services-cards-li{
+    width: 380px;
+    padding-left: 80px;
+    position: relative;
+}
+
+.services-cards-li:not(:nth-last-child(-n + 3)){
+    margin-bottom: 100px;
+}
+
+.services-cards-li::before{
+    position: absolute;
+    left: 24px;
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.alarm::before{
+    background-image: url(../img/1alarm.png);
+}
+
+.line-graph::before{
+    background-image: url(../img/2line-graph.png);
+}
+
+.computer::before{
+    background-image: url(../img/3computer.png);
+}
+
+.book::before{
+    background-image: url(../img/4book.png);
+}
+
+.home::before{
+    background-image: url(../img/5home.png);
+}
+
+.image::before{
+    background-image: url(../img/6image.png);
+}
+
+.services-name{
+    font-family: var(--montserrat);
+    font-size: 14px;
+    color: rgba(51, 51, 51, 255);
+    text-align: left;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.services-text{
+    font-family: var(--roboto);
+    font-size: 15px;
+    color: rgba(153, 153, 153, 255);
+    text-align: left;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.section-two{
+    padding-top: 92px;
+}
+
+.team{
+    display: block;
+    font-family: var(--montserrat);
+    font-size: 30px;
+    color: rgba(51, 51, 51, 255);
+    font-weight: 700;
+    text-align: center;
+}
+
+.team-span{
+    display: block;
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 22px;
+}
+
+.team::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--red);
+    margin: 42px auto 0;
+}
+
+.team-text{
+    font-family: var(--roboto);
+    font-size: 15px;
+    color: rgba(153, 153, 153, 255);
+    text-align: center;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 46px;
+}
