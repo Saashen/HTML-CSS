@@ -58,10 +58,10 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 28px;  
+    min-height: 60px;
 }
 
-h1{
+.h1{
     font-family: var(--montserrat);
     font-size: 30px;
     color: var(--green);
@@ -70,9 +70,8 @@ h1{
 }
 
 .menu{
-    width: 490px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-li{
@@ -83,12 +82,16 @@ h1{
     text-transform: uppercase;
 }
 
+.menu-li{
+    padding: 0 29px 0;
+}
+
 .menu-li:hover,
 .menu-li:focus{
     color: var(--red);
 }
 
-/* .menu-li::after{
+.menu-li:hover .menu-li::after{
     content: '';
     display: block;
     width: 50px;
@@ -96,7 +99,7 @@ h1{
     background-color: #f38181;
     margin: 12px auto 0;
     color: #f38181;
-} */
+}
 
 .main{
     padding-top: 110px;
@@ -141,7 +144,7 @@ h1{
 }
 
 .services-cards-li{
-    width: 380px;
+    flex-basis: 380px;
     padding-left: 80px;
     position: relative;
 }
@@ -323,7 +326,7 @@ h1{
     justify-content: space-between; 
     align-items: center;
     border-top: 1px solid rgb(236, 236, 236);
-    padding: 24px 0;
+    min-height: 62px;
 }
 
 .footer-text{
@@ -352,8 +355,7 @@ input[type="email"]{
     height: 40px;
     text-indent: 12px;
     border: 1px solid rgb(236, 236, 236);
-    margin: 0;
-    padding: 0;
+
 }
 
 input[type="submit"]{
@@ -367,6 +369,4 @@ input[type="submit"]{
     height: 40px;
     background-color: var(--green);
     border-style: none;
-    margin: 0;
-    padding: 0;
 }
