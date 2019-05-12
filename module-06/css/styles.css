@@ -71,6 +71,8 @@ h3{
 
 .menu{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -80,10 +82,7 @@ h3{
     color: var(--green);
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.menu-li{
-    padding: 0 29px 0;
+    padding: 8px 29px;
 }
 
 .menu-li:hover,
@@ -91,7 +90,7 @@ h3{
     color: var(--red);
 }
 
-.menu-li:hover .menu-li::after{
+. .menu-li:hover .menu-li::after{
     content: '';
     display: block;
     width: 50px;
