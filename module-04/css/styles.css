@@ -16,6 +16,7 @@ img{
 
 a{
     text-decoration: none;
+    display: block;
 }
 
 .clearfix::after{
@@ -36,6 +37,7 @@ a{
 
 .logo-link{
     font-size: 0;
+    float: left;
 }
 
 .logo-name{
@@ -54,9 +56,7 @@ a{
 }
 
 .menu{
-    width: 475px;
     list-style: none;
-    font-size: 0;
     float: right;
 }
 
@@ -66,7 +66,6 @@ a{
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 8px;
 }
 
 .menu-item a{
@@ -89,6 +88,7 @@ a{
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 92px;
 }
 
 .featured-products::after{
@@ -97,7 +97,7 @@ a{
     width: 164px;
     height: 6px;
     background-color: rgba(26, 188, 156, 255);
-    margin: 32px auto 92px;
+    margin: 32px auto 0;
 }
 
 .products{
@@ -107,7 +107,6 @@ a{
 .product-card{
     width: 255px;
     float: left;
-    margin-bottom: 30px;
     font-size: 0;
 }
 
@@ -115,8 +114,22 @@ a{
     margin-right: 30px;
 }
 
+.product-card:not(:nth-last-child(-n+4)){
+    margin-bottom: 30px;
+}
+
 .product-link{
     display: inline-block;
+}
+
+.product-link:hover .price-title,
+.product-link:focus{
+    background-color: #1abc9c;
+}
+
+.product-link:hover .price-cash,
+.product-link:focus{
+    background-color: #7fd9c7;
 }
 
 .card{
@@ -159,15 +172,7 @@ a{
     display: inline-block;
 }
 
-.price:hover .price-title,
-.price-title:focus{
-    background-color: #1abc9c;
-}
 
-.price:hover .price-cash,
-.price-cash:focus{
-    background-color: #7fd9c7;
-}
 
 .latest-news{
     font-family: 'Roboto', sans-serif;
@@ -208,6 +213,7 @@ a{
     text-align: left;
     font-weight: 600;
     line-height: 150%;
+    margin-bottom: 30px;
 }
 
 .article-name::after{
@@ -216,7 +222,7 @@ a{
     background-color: rgba(26, 188, 156, 255);
     width: 136px;
     height: 3px;
-    margin: 10px 0 30px;
+    margin-top: 10px;
 }
 
 .article-text{
