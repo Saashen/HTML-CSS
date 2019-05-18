@@ -38,6 +38,7 @@ a{
 
 .logo-link{
     font-size: 0;
+    float: left;
 }
 
 .logo-name{
@@ -56,9 +57,7 @@ a{
 }
 
 .menu{
-    width: 475px;
     list-style: none;
-    font-size: 0;
     float: right;
 }
 
@@ -164,6 +163,7 @@ a{
 
 .main{
     background-color:#e9f0fd;
+    padding-bottom: 30px;
 }
 
 .new-collection{
@@ -174,6 +174,7 @@ a{
     font-weight: 700;
     text-transform: uppercase;
     padding-top: 100px;
+    margin-bottom: 92px;
 }
 
 .new-collection::after{
@@ -182,7 +183,7 @@ a{
     width: 164px;
     height: 6px;
     background-color: rgba(26, 188, 156, 255);
-    margin: 32px auto 92px;
+    margin: 32px auto 0;
 }
 
 .products{
@@ -193,7 +194,6 @@ a{
     position: relative;
     width: 255px;
     float: left;
-    margin-bottom: 30px;
     font-size: 0;
 }
 
@@ -203,12 +203,11 @@ a{
 
 .opacity{
     position: absolute;
-    width: 235px;
-    height: 262px;
-    top: 10px;
-    left: 10px;
+    width: 255px;
+    height: 282px;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
+    border: 10px solid rgba(255, 255, 255, 0.7);
 }
 
 .product-card:hover .opacity{
