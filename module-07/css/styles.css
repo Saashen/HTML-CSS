@@ -70,7 +70,6 @@ ul{
     --yellow: rgb(254, 209, 54);
     --black: rgb(34, 34, 34);
     --grey: rgba(119, 119, 119);
-
 }
 
 .header{
@@ -80,6 +79,17 @@ ul{
     min-height: 115px;
 }
 
+.h1{
+    font-family: 'Dancing Script', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.h1 a{
+    color: var(--yellow);
+}
+
 .menu{
     display: flex;
     flex-wrap: wrap;
@@ -87,14 +97,112 @@ ul{
     align-items: center;
 }
 
-.name:valid{
-    outline: green;
+.menu-li{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
-.email:valid{
-    outline: green;
+.menu-li:not(:last-child){
+    padding-right: 40px;
 }
 
-.email:invalid{
-    outline: red;
+.menu-a{
+    color: var(--black);
+}
+
+.menu-li:hover .menu-a,
+.menu-a:focus{
+    color: var(--yellow);
+}
+
+.main{
+    padding: 72px 0 120px;
+    color: var(--black);
+}
+
+.services{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.signature{
+    font-family: 'Oleo Script', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(119, 119, 119, 0.6);
+    padding-top: 15px;
+    text-align: center;
+}
+
+.services-scope{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 82px;
+}
+
+.service{
+    width: 274px;
+}
+
+.service:not(:nth-child(3n)){
+    margin-right: 56px;
+}
+
+.services-name{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+.services-name::before{
+    content: '';
+    display: block;
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    padding: 34px;
+    border: 3px solid var(--yellow);
+    border-radius: 50%;
+    background-position: center;
+    margin: 0 auto 28px;
+}
+
+.services-name:nth-child(1)::before{
+    background-image: url(../img/1Icon-Basket@1X.png);
+}
+
+.services-name:nth-child(2)::before{
+    background-image: url(../img/2Icon-Laptop@1X.png)
+}
+
+.services-name:nth-child(3)::before{
+    background-image: url(../img/3Icon-Locked@1X.png);
+}
+
+.services-text{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+    padding-top: 18px;
+    line-height: 150%;
+    color: var(--grey);
+}
+
+.footer{
+    background-color: var(--black);
+    min-height: 672px;
+    display: flex;
+    color: #fff;
 }
