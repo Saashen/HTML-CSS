@@ -202,7 +202,90 @@ ul{
 
 .footer{
     background-color: var(--black);
+    background-image: url(../img/Map\ Image@1X.png);
+    background-position: 100% 90%;
+    background-repeat: no-repeat;
     min-height: 672px;
-    display: flex;
     color: #fff;
+    position: relative;
+}
+
+.contact-us{
+    padding-top: 110px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.signature2{
+    font-family: 'Oleo Script', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(119, 119, 119, 0.6);
+    padding-top: 15px;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 255px;
+    left: 230px;
+    padding-top: 76px;
+}
+
+input{
+    width: 455px;
+    text-indent: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--grey);
+}
+
+input::placeholder{
+    /* padding: 5px 0 0 20px; */
+    color: rgba(187, 187, 187, 255);
+}
+
+.form-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.name, .email, .subject{
+    height: 50px;
+}
+
+.name, .email{
+    margin-bottom: 30px;
+}
+
+.text{
+    height: 210px;
+}
+
+.button{
+    padding: 0;
+    width: 240px;
+    height: 66px;
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 30px auto 0;
 }
