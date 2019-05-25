@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-slab-v8-latin-regular.woff2') format('woff2'), 
+         url('../fonts/roboto-slab-v8-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/dancingscript-bold-webfont.woff2') format('woff2'), 
+         url('../fonts/dancingscript-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-slab-v8-latin-700.woff2') format('woff2'), 
+         url('../fonts/roboto-slab-v8-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'), 
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Oleo Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/OleoScript-Regular.woff2') format('woff2'), 
+         url('../fonts/OleoScript-Regular.woff') format('woff');
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+:root{
+    --yellow: rgb(254, 209, 54);
+    --black: rgb(34, 34, 34);
+    --grey: rgba(119, 119, 119);
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 115px;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.name:valid{
+    outline: green;
+}
+
+.email:valid{
+    outline: green;
+}
+
+.email:invalid{
+    outline: red;
+}
