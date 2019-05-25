@@ -246,13 +246,15 @@ h3{
     width: 383px;
     height: 473px; 
     top: 0;
-    background-image: linear-gradient(to bottom,rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
-    box-shadow: 10px 10px 0 0 rgba(149, 225, 211, 0.9);
-    opacity: 0;
+    background-image: linear-gradient(to bottom,rgba(243, 129, 129, 0.0),rgba(252, 227, 138, 0.0));
+    box-shadow: 10px 10px 0 0 rgba(149, 225, 211, 0.0);
 }
 
 .team-cards-li:hover .social{
-    opacity: 1;
+    transform: translate(-10px, -10px);
+    background-image: linear-gradient(to bottom,rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
+    box-shadow: 10px 10px 0 0 rgba(149, 225, 211, 0.9);
+    transition: all 1s ease; 
 }
 
 .social-icons{
@@ -266,8 +268,16 @@ h3{
 .social-icon-a{
     width: 56px;
     height: 56px;
-    border: 1px solid var(--red);
     background: rgb(252, 227, 138) no-repeat center;
+    opacity: 0;
+}
+
+.social-icon-a:not(:last-child){
+    border-right: 1px solid var(--red);
+}
+
+.team-cards-li:hover .social-icon-a{
+    opacity: 1;
 }
 
 .social-icon-a:hover,
