@@ -247,6 +247,13 @@ h3{
     box-shadow: 10px 10px 0 0 rgba(149, 225, 211, 0.0);
 }
 
+.team-cards-li:hover .person{
+    transform: translate(-10px, -10px);
+    background-image: linear-gradient(to bottom,rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
+    box-shadow: 10px 10px 0 0 rgba(149, 225, 211, 0.9);
+    transition: all 1s ease; 
+}
+
 .team-cards-li:hover .social{
     transform: translate(-10px, -10px);
     background-image: linear-gradient(to bottom,rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
@@ -269,7 +276,7 @@ h3{
     opacity: 0;
 }
 
-.social-icon-a:not(:last-child){
+.social-icon-a{
     border-right: 1px solid var(--red);
 }
 
