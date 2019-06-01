@@ -1,0 +1,137 @@
+@font-face{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-v19-latin-300.woff2') format('woff2'),
+         url('../fonts/roboto-v19-latin-300.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v13-latin-700.woff2') format('woff2'),
+         url('../fonts/montserrat-v13-latin-700.woff') format('woff');
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+:root{
+    --red: #FF4E50;
+}
+
+.header{
+    background: url(../img/Vector\ Smart\ Object@1X.png) no-repeat center center;
+    background-color: #1a1915;
+    color: #fff;
+}
+
+.container{
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0 140px;
+}
+
+.logo{
+    order: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    padding-top: 100px;
+    letter-spacing: 1px;
+}
+
+.log-in, .sign-up{
+    order: 0;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.log-in{
+    padding: 21px 30px;
+}
+
+.sign-up{
+    border: 3px solid #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+}
+
+.title{
+    order: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 40px;
+    text-transform: uppercase;
+    line-height: 130%;
+}
+
+.description{
+    order: 3;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 60px 16px;
+}
+
+.first-button{
+    order: 4;
+    background-color: var(--red);
+    border: none;
+    padding: 12px 46px;
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+.main{
+    padding-top: 70px;
+}
+
+.body-title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 130%;
+    padding: 0 38px 0;
+}
