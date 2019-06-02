@@ -57,6 +57,27 @@ ul{
     padding: 16px 0 140px;
 }
 
+.container-two{
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.navigation-links{
+    width: 240px;
+    font-size: 0;
+}
+
 .logo{
     order: 1;
     font-family: 'Montserrat', sans-serif;
@@ -68,6 +89,7 @@ ul{
 }
 
 .log-in, .sign-up{
+    display: inline-block;
     order: 0;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -77,17 +99,26 @@ ul{
 }
 
 .log-in{
-    padding: 21px 30px;
-}
-
-.sign-up{
-    border: 3px solid #fff;
-    border-radius: 50px;
     padding: 15px 30px;
 }
 
+.sign-up{
+    padding: 15px 30px;
+}
+
+.sign-up:hover,
+.sign-up:focus{
+    border: 3px solid #fff;
+    border-radius: 50px;
+}
+
+.log-in:hover,
+.log-in:focus{
+    border: 3px solid #fff;
+    border-radius: 50px;
+}
+
 .title{
-    order: 2;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -99,7 +130,7 @@ ul{
 }
 
 .description{
-    order: 3;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -109,7 +140,6 @@ ul{
 }
 
 .first-button{
-    order: 4;
     background-color: var(--red);
     border: none;
     padding: 12px 46px;
@@ -124,9 +154,11 @@ ul{
 
 .main{
     padding-top: 70px;
+    padding-bottom: 56px;
 }
 
 .body-title{
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -134,4 +166,176 @@ ul{
     text-align: center;
     line-height: 130%;
     padding: 0 38px 0;
+}
+
+.partners{
+    width: 194px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 14px 0 28px;
+}
+
+.partner:nth-child(2){
+    order: 2;
+}
+
+.partner:nth-child(3){
+    order: 1;
+}
+
+.partner:nth-child(4){
+    order: 3;
+}
+
+.picture-img{
+    padding: 0 36px;
+    border-radius: 50%;
+}
+
+.icon{
+    position: relative;
+}
+
+.icon::after{
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.one::after{
+    background-color: var(--red);
+    background-image: url(../img/icons/Shape\ 128@1X.png);
+}
+
+.two::after{
+    background-color: #1CD7AD;
+    background-image: url(../img/icons/Shape\ 153@1X.png);
+}
+
+.three::after{
+    background-color: #FFA507;
+    background-image: url(../img/icons/Shape\ 155@1X.png);
+}
+
+.four::after{
+    background-color: #4E73DB;
+    background-image: url(../img/icons/Shape\ 170@1X.png);
+}
+
+.partner-name{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.partner-description{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    padding: 16px 0 28px;
+    line-height: 130%;
+}
+
+.second-button{
+    padding: 12px 46px;
+    background-color: #fff;
+    border: 3px solid var(--red);
+    border-radius: 50px;
+    color: var(--red);
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 670px;
+    }
+
+    .navigation{
+        width: 670px;
+        justify-content: space-between;
+    }
+
+    .logo{
+        order: 0;
+        padding: 0;
+        align-self: center;
+        justify-self: flex-start;
+    }
+
+    .title{
+        padding: 110px 80px 0;
+        font-size: 48px;
+        line-height: 120%;
+    }
+
+    .description{
+        font-size: 24px;
+        padding: 24px 0 26px;
+    }
+
+    .container-two{
+        width: 470px;
+    }
+    
+    .body-title{
+        padding: 0;
+    }
+    
+    .partners{
+        width: 470px;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding-top: 34px;
+    }
+
+    .partner{
+        width: 194px;
+    }
+
+    .partner:nth-child(2){
+        order: 1;
+    }
+    
+    .partner:nth-child(3){
+        order: 2;
+    }
+}
+
+@media (min-width: 942px){
+    .container{
+        width: 940px;
+    }
+
+    .container-two{
+        width: 940px;
+    }
+
+    .navigation{
+        width: 940px;
+    }
+
+    .partners{
+        width: 940px;
+    }
 }
