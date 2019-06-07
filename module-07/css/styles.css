@@ -91,9 +91,10 @@ ul{
 }
 
 .menu{
+    width: 480px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -103,10 +104,6 @@ ul{
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
-}
-
-.menu-li:not(:last-child){
-    padding-right: 40px;
 }
 
 .menu-a{
@@ -130,6 +127,7 @@ ul{
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 72px;
 }
 
 .signature{
@@ -145,15 +143,12 @@ ul{
 .services-scope{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 82px;
+    justify-content: space-between;
+    padding: 82px 0 120px;
 }
 
 .service{
     width: 274px;
-}
-
-.service:not(:nth-child(3n)){
-    margin-right: 56px;
 }
 
 .services-name{
@@ -239,7 +234,6 @@ ul{
 }
 
 input{
-    width: 455px;
     text-indent: 20px;
     border: 1px solid;
     border-radius: 5px;
@@ -252,32 +246,28 @@ input{
 }
 
 input::placeholder{
-    /* padding: 5px 0 0 20px; */
     color: rgba(187, 187, 187, 255);
 }
 
 .form-div{
+    width: 455px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .name, .email, .subject{
     height: 50px;
 }
 
-.name, .email{
-    margin-bottom: 30px;
-}
-
 .text{
+    width: 455px;
     height: 210px;
 }
 
 .button{
-    padding: 0;
-    width: 240px;
-    height: 66px;
+    text-indent: 0px;
     background-color: var(--yellow);
     border: 1px solid var(--yellow);
     border-radius: 5px;
@@ -286,6 +276,8 @@ input::placeholder{
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
+    text-align: center;
     color: #fff;
+    padding: 20px 35px;
     margin: 30px auto 0;
 }
