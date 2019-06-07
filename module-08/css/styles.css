@@ -55,7 +55,6 @@ ul{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 16px 0 140px;
 }
 
 .container-two{
@@ -72,6 +71,7 @@ ul{
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    padding-top: 16px;
 }
 
 .navigation-links{
@@ -90,6 +90,7 @@ ul{
 }
 
 .log-in, .sign-up{
+    border: 3px solid transparent;
     display: inline-block;
     order: 0;
     color: #fff;
@@ -137,7 +138,7 @@ ul{
     font-weight: 300;
     font-size: 16px;
     text-align: center;
-    padding: 14px 60px 16px;
+    padding: 14px 60px 0;
 }
 
 .first-button{
@@ -151,11 +152,7 @@ ul{
     font-weight: 700;
     font-size: 14px;
     text-align: center;
-}
-
-.main{
-    padding-top: 70px;
-    padding-bottom: 56px;
+    margin: 26px 0 140px;
 }
 
 .body-title{
@@ -166,7 +163,7 @@ ul{
     font-size: 20px;
     text-align: center;
     line-height: 130%;
-    padding: 0 38px 0;
+    padding: 70px 38px 0;
 }
 
 .partners{
@@ -175,7 +172,7 @@ ul{
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 14px 0 28px;
+    padding-top: 14px;
 }
 
 .partner:nth-child(2){
@@ -265,6 +262,7 @@ ul{
     font-weight: 700;
     font-size: 14px;
     text-align: center;
+    margin: 28px 0 56px;
 }
 
 @media (min-width: 768px){
@@ -292,16 +290,13 @@ ul{
 
     .description{
         font-size: 24px;
-        padding: 24px 0 26px;
+        padding: 24px 0 0;
     }
 
     .container-two{
         width: 470px;
     }
-    
-    .body-title{
-        padding: 0;
-    }
+
     
     .partners{
         width: 470px;
