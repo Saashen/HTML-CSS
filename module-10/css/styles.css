@@ -86,19 +86,44 @@ h3{
 .header{
     min-height: 900px;
     background-image: 
+        -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), 
+        url('../img/cover@1X.png');
+    background-image: 
+        -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+        url('../img/cover@1X.png');
+    background-image: 
+        -o-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+        url('../img/cover@1X.png');
+    background-image: 
         linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
         url('../img/cover@1X.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx){
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx){
     .header{
+        background-image: 
+            -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), 
+            url('../img/cover@2X.png');
+        background-image: 
+            -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+            url('../img/cover@2X.png');
+        background-image: 
+            -o-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+            url('../img/cover@2X.png');
         background-image: 
             linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
             url('../img/cover@2X.png');
@@ -109,9 +134,15 @@ h3{
     font-family: var(--montserrat);
     font-weight: 700;
     min-height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container{
@@ -127,9 +158,15 @@ h3{
 
 .menu{
     min-width: 622px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .menu__li{
@@ -231,14 +268,20 @@ h3{
 }
 
 .services-cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 76px;
 }
 
 .services-cards__li{
-    flex-basis: 380px;
+    -ms-flex-preferred-size: 380px;
+        flex-basis: 380px;
     padding-left: 80px;
     position: relative;
 }
@@ -337,8 +380,12 @@ h3{
 }
 
 .team-cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-top: 80px;
 }
 
@@ -347,23 +394,40 @@ h3{
 }
 
 .team-cards__li--hover:hover{
-    transform: translate(-10px, -10px);
-    box-shadow: 10px 10px 0 0 rgba(149, 225, 211, 0.9);
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px 0 0 rgba(149, 225, 211, 0.9);
+            box-shadow: 10px 10px 0 0 rgba(149, 225, 211, 0.9);
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease; 
 }
 
 .social-icons{
     position: absolute;
     top: 0;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(243, 129, 129, 0.0)),to(rgba(252, 227, 138, 0.0)));
+    background-image: -webkit-linear-gradient(top,rgba(243, 129, 129, 0.0),rgba(252, 227, 138, 0.0));
+    background-image: -o-linear-gradient(top,rgba(243, 129, 129, 0.0),rgba(252, 227, 138, 0.0));
     background-image: linear-gradient(to bottom,rgba(243, 129, 129, 0.0),rgba(252, 227, 138, 0.0));
     width: 383px;
     height: 473px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .team-cards__li--hover:hover .social-icons{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(243, 129, 129, 0.9)),to(rgba(252, 227, 138, 0.9)));
+    background-image: -webkit-linear-gradient(top,rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
+    background-image: -o-linear-gradient(top,rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
     background-image: linear-gradient(to bottom,rgba(243, 129, 129, 0.9),rgba(252, 227, 138, 0.9));
 }
 
@@ -379,9 +443,15 @@ h3{
 .social-icons__li a{
     width: 56px;
     height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .social-icons__li:not(:last-child){
@@ -423,9 +493,15 @@ h3{
 }
 
 .footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between; 
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; 
+    -webkit-box-align: center; 
+        -ms-flex-align: center; 
+            align-items: center;
     border-top: 1px solid rgb(236, 236, 236);
     min-height: 62px;
 }
