@@ -1,0 +1,11 @@
+.navigation{
+    @include font-set($font: $headers-buttons-font, $weight: 700);
+    min-height: 70px;
+    @extend %flex-spaceb-center;
+
+    .logo{
+        color: $white-color;
+        font-size: 30px;
+        text-align: left;
+    }
+}

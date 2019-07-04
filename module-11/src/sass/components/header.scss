@@ -1,0 +1,58 @@
+.header{
+    min-height: 900px;
+    background-image: 
+        -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), 
+        url('../../images/cover@1X.png');
+    background-image: 
+        -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+        url('../../images/cover@1X.png');
+    background-image: 
+        -o-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+        url('../../images/cover@1X.png');
+    background-image: 
+        linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+        url('../../images/cover@1X.png');
+    @include bg-set;
+    color: $white-color;
+    @extend %flex-column-center;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx){
+        .header{
+            background-image: 
+                -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), 
+                url('../../images/cover@2X.png');
+            background-image: 
+                -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+                url('../../images/cover@2X.png');
+            background-image: 
+                -o-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+                url('../../images/cover@2X.png');
+            background-image: 
+                linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), 
+                url('../../images/cover@2X.png');
+        }
+    }
+
+    &__title{
+        @include font-set ($font: $special-font, $size: 72px);
+        padding-top: 120px;
+    }
+    
+    &__welcoming{
+        @include font-set ($font: $headers-buttons-font, $weight: 700, $size: 150px);
+        line-height: 100%;
+        text-transform: uppercase;
+        padding-top: 32px;
+    }
+    
+    &__button{
+        @extend .header__welcoming;
+        color: $white-color;
+        background-color: unset;
+        font-size: 14px;
+        border-style: none;
+        border: 3px solid $white-color;
+        padding: 14px 34px;
+        margin-top: 92px;
+    }
+}

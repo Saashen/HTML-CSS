@@ -1,0 +1,13 @@
+@mixin bg-set($size: cover, $repeat: no-repeat, $pos: center) {
+    background-size: $size;
+    background-repeat: $repeat;
+    background-position: $pos;
+}
+
+@mixin font-set($font: '', $style: normal, $weight: 400, $size: 30px, $align: center){
+    font-family: $font;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    text-align: $align;
+}
