@@ -624,33 +624,34 @@ h3 {
   left: 24px;
   content: '';
   display: block;
+  fill: #95e1d3;
   width: 32px;
   height: 32px;
   background: no-repeat center;
 }
 
 .services-cards__service:nth-child(1)::before {
-  background-image: url(../../images/icons/alarm.svg);
+  background-image: url(../images/alarm.svg);
 }
 
 .services-cards__service:nth-child(2)::before {
-  background-image: url(../../images/icons/line-graph.svg);
+  background-image: url(../images/line-graph.svg);
 }
 
 .services-cards__service:nth-child(3)::before {
-  background-image: url(../../images/icons/computer.svg);
+  background-image: url(../images/computer.svg);
 }
 
 .services-cards__service:nth-child(4)::before {
-  background-image: url(../../images/icons/book.svg);
+  background-image: url(../images/book.svg);
 }
 
 .services-cards__service:nth-child(5)::before {
-  background-image: url(../../images/icons/home.svg);
+  background-image: url(../images/home.svg);
 }
 
 .services-cards__service:nth-child(6)::before {
-  background-image: url(../../images/icons/image.svg);
+  background-image: url(../images/image.svg);
 }
 
 .services-cards__title {

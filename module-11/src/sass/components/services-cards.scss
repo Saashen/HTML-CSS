@@ -17,33 +17,34 @@
             left: 24px;
             content: '';
             display: block;
+            fill: $additional-color;
             width: 32px;
             height: 32px;
             background: no-repeat center;
         }
 
         &:nth-child(1)::before{
-            background-image: url(../images/icons/alarm.svg);
+            background-image: url(../images/alarm.svg);
         }
         
         &:nth-child(2)::before{
-            background-image: url(../images/icons/line-graph.svg);
+            background-image: url(../images/line-graph.svg);
         }
         
         &:nth-child(3)::before{
-            background-image: url(../images/icons/computer.svg);
+            background-image: url(../images/computer.svg);
         }
         
         &:nth-child(4)::before{
-            background-image: url(../images/icons/book.svg);
+            background-image: url(../images/book.svg);
         }
         
         &:nth-child(5)::before{
-            background-image: url(../images/icons/home.svg);
+            background-image: url(../images/home.svg);
         }
         
         &:nth-child(6)::before{
-            background-image: url(../images/icons/image.svg);
+            background-image: url(../images/image.svg);
         }
     }
 
